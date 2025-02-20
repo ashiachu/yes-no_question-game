@@ -11,5 +11,11 @@ A fun and interactive **Yes/No question game** built using **HTML, CSS, and Java
 ## 🛠️ Technologies Used
 - **HTML** – Structure of the game  
 - **CSS** – Styling and animations  
-- **JavaScript** – Handles user interactions  
+- **JavaScript** – Handles user interactions
 
+ 🎮 Usage
+Click on the Yes or No buttons to answer the questions.
+Enjoy the fun animations and responses!
+
+📌 Live Demo
+ https://ashiachu.github.io/yes-no_question-game/
