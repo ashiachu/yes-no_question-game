@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YES/NO</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            flex-direction: column;
+        }
+        h1{
+            color: antiquewhite;
+            font-family: "Grechen Fuemen", cursive;
+        }
+
+       
+        img{
+            border-radius: 20px ;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            background-color: plum;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Do you wanna marry me?</h1> 
+    <div class="container">           
+        <button onclick="goToYesPage()">Yes</button>
+        <button onclick="goToNoPage()">No</button>
+    </div>
+
+    <script>
+        function goToYesPage() {
+            window.location.href = "idoo.html"; 
+        }
+
+        function goToNoPage() {
+            window.location.href = "idont.html"; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yes-ah-appo-good</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            flex-direction: column;
+        }
+        h1{
+            color: antiquewhite;
+            font-family: "Grechen Fuemen", cursive;
+        }
+
+        img{
+            border-radius: 20px ;
+        }
+        button {
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 12px 24px;
+            border: none;
+            background-color: pink;
+            color: palevioletred;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: red;
+        }
+        #btn{
+            font-family: "Grechen Fuemen", cursive;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+        <h1>If you say yes, then this could be us ❤️</h1>
+        <img src="assets/up.jpg" alt="there is no way i will take the ans no">
+        
+        <button id="btn" onclick="updateTextAndLaunchConfetti()">Click me</button>
+
+    <script>
+        function updateTextAndLaunchConfetti() {
+          
+            document.getElementById("btn").textContent = "I LOVE YOU MAH 🧈";
+
+            const duration = 5 * 1000; 
+            const end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    startVelocity: 30,
+                    spread: 700,
+                    origin: { x: Math.random(), y: 0 } 
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        }
+        window.onload = function () {
+            if (performance.navigation.type === 1) {
+            
+                window.location.href = "index.html";
+            }
+        };
+    </script>
+</body>
+</html>
